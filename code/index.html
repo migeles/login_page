@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
-    <form action="/assets/background.png">
-        <div class="usernameSpace">
-            <label for="username">Email/Username</label><br>
-            <input type="text" id="username" name="username"><br>    
+    <div class="loginContainer">
+        <div class="loginContents">
+            <div class="mainLogoContainer">
+                <img class="listersLogo" src="../assets/ListersLogo_Png.png" alt="">
+            </div>
+            <form action="">
+                <div class="usernameSpace">
+                    <input  type="text" id="username" name="username" required><br>    
+                    <span class="formSpan">Email/Username</span>
+                </div>
+                <div class="passwordSpace">
+                    <input type="password" id="password" name="password" required>    
+                    <span class="formSpan">Password</span>
+                </div>
+                <div class="checkarea">
+                    <input type="checkbox" id="rememberMe" value="rememberMe">
+                    <label class="rememberMe" for="rememberMe">Remember me</label>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <section class="signup">
+                <p>Or sign up using</p><br>
+                <img class="clogo facebbok" src="../assets/Logo/Facebook logo.png" alt="Facebook Logo">
+                <img class="clogo google" src="../assets/Logo/Google logo.png" alt="Google Logo">
+                <img class="clogo twitter" src="../assets/Logo/Twitter logo.png" alt="Twitter Logo">
+            </section>
+            
+            <p class="signupnow">Don't have an account? <b>Sign up now</b></p>
+       
         </div>
-        <div class="passwordSpace">
-            <label for="password">password</label><br>
-            <input type="password" id="password" name="password">    
-        </div>
-        <br>
-        <div>
-            <input type="checkbox" id="rememberMe" value="rememberMe">
-            <label for="rememberMe">Remember me</label><br>
-            <input type="submit" value="Login">
-        </div>
-    </form>
-    <section>
-        <p>Or Sign Up Using</p><br>
-        <img class="clogo" src="../assets/Logo/Facebook logo.png" alt="Facebook Logo">
-        <img class="clogo" src="../assets/Logo/Google logo.png" alt="Google Logo">
-        <img class="clogo" src="../assets/Logo/Twitter logo.png" alt="Twitter Logo">
-    </section>
-
-    <br>
-
-    <p>Don't have an account? <b>Sign up now</b></p>
-
+    </div>
 </body>
 </html>
